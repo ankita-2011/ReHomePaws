@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.ma-page-wrapper {
+  max-width: 1000px;
+  margin: 40px auto 80px;
+  padding: 0 24px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.ma-header {
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.ma-header h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 12px 0;
+}
+
+.ma-header p {
+  color: #666;
+  font-size: 18px;
+  margin: 0;
+}
+
+.ma-loading, .ma-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #888;
+}
+
+.ma-empty-icon {
+  font-size: 64px;
+  color: #ffe0da;
+  margin-bottom: 20px;
+}
+
+.ma-empty h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 12px;
+}
+
+.ma-browse-btn {
+  margin-top: 24px;
+  padding: 12px 30px;
+  background: linear-gradient(135deg, #ff8a75, #ff6f5e);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px rgba(255, 111, 94, 0.3);
+  font-family: 'Outfit', sans-serif;
+}
+
+.ma-browse-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 111, 94, 0.4);
+}
+
+.ma-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  gap: 24px;
+}
+
+.ma-card {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.03);
+  border: 1px solid rgba(255, 111, 94, 0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s;
+}
+
+.ma-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.ma-card-top {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.ma-pet-img-wrap {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.ma-pet-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ma-pet-img-ph {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fff0ec, #ffe5e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  color: #ffb8b0;
+}
+
+.ma-card-info h3 {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px 0;
+}
+
+.ma-card-info p {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 12px 0;
+  font-weight: 500;
+}
+
+.ma-status-badge {
+  display: inline-block;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-pending { background: #fff3cd; color: #856404; border: 1px solid #ffeeba; }
+.status-accepted { background: #d1f5e0; color: #1a7a3f; border: 1px solid #c3e6cb; }
+.status-rejected { background: #fef0f0; color: #b33a3a; border: 1px solid #f5c6cb; }
+
+.ma-card-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px dashed #eee;
+  margin-top: auto;
+}
+
+.ma-date {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #888;
+  font-size: 14px;
+}
+
+.ma-date svg {
+  color: #ff6f5e;
+}
+
+.ma-view-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: #f8f8fb;
+  border: 1px solid #eee;
+  color: #555;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Outfit', sans-serif;
+}
+
+.ma-view-btn:hover {
+  background: #fff0ec;
+  color: #ff6f5e;
+  border-color: #ff6f5e;
+}
+
+.ma-chat-btn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #ff8a75, #ff6f5e);
+  border: none;
+  color: #fff;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 13px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Outfit', sans-serif;
+  box-shadow: 0 2px 8px rgba(255, 111, 94, 0.3);
+}
+
+.ma-chat-btn:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 111, 94, 0.45);
+}
+
+@media (max-width: 600px) {
+  .ma-grid { grid-template-columns: 1fr; }
+}

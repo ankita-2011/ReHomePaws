@@ -1,0 +1,168 @@
+/* ── Skeleton Shimmer Keyframe ────────────────────────────────────────────── */
+@keyframes shimmer {
+  0% {
+    background-position: -468px 0;
+  }
+  100% {
+    background-position: 468px 0;
+  }
+}
+
+.skeleton-shimmer {
+  background: #f6f7f8;
+  background-image: linear-gradient(
+    90deg,
+    #f6f7f8 0%,
+    #edeef1 20%,
+    #f6f7f8 40%,
+    #f6f7f8 100%
+  );
+  background-repeat: no-repeat;
+  background-size: 800px 104px;
+  display: inline-block;
+  position: relative;
+  animation: shimmer 1.5s infinite linear;
+}
+
+/* ── Card Skeleton ───────────────────────────────────────────────────────── */
+.skeleton-card {
+  background: #fff;
+  border-radius: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.04);
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.skeleton-card-img {
+  height: 280px;
+  width: 100%;
+}
+
+.skeleton-card-body {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.skeleton-text-title {
+  height: 24px;
+  width: 60%;
+  border-radius: 6px;
+}
+
+.skeleton-text-subtitle {
+  height: 14px;
+  width: 40%;
+  border-radius: 4px;
+  margin-bottom: 8px;
+}
+
+.skeleton-grid-details {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.skeleton-grid-item {
+  height: 48px;
+  border-radius: 12px;
+}
+
+.skeleton-card-footer {
+  height: 20px;
+  width: 80%;
+  border-radius: 4px;
+  margin-top: 12px;
+  border-top: 1px dashed #eee;
+  padding-top: 16px;
+}
+
+/* ── Detail Page Skeleton ─────────────────────────────────────────────────── */
+.skeleton-detail-wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 32px;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 40px;
+}
+
+.skeleton-detail-left {
+  height: 500px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.skeleton-detail-right {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skeleton-detail-header {
+  height: 48px;
+  width: 70%;
+  border-radius: 8px;
+}
+
+.skeleton-detail-tags {
+  display: flex;
+  gap: 12px;
+}
+
+.skeleton-detail-tag {
+  height: 32px;
+  width: 90px;
+  border-radius: 20px;
+}
+
+.skeleton-detail-block {
+  height: 120px;
+  width: 100%;
+  border-radius: 16px;
+}
+
+@media (max-width: 768px) {
+  .skeleton-detail-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .skeleton-detail-left {
+    height: 300px;
+  }
+}
+
+/* ── Application Row Skeleton ─────────────────────────────────────────────── */
+.skeleton-row-item {
+  background: white;
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.skeleton-row-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 16px;
+  flex-shrink: 0;
+}
+
+.skeleton-row-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.skeleton-row-line {
+  height: 14px;
+  border-radius: 4px;
+}

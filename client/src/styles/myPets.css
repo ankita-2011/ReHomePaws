@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap');
+
+.mp-page-wrapper {
+  max-width: 1200px;
+  margin: 40px auto 80px;
+  padding: 0 24px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.mp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.mp-header h1 {
+  font-size: 36px;
+  font-weight: 800;
+  color: #1a1a2e;
+  margin: 0 0 8px 0;
+}
+
+.mp-header p {
+  color: #666;
+  font-size: 16px;
+  margin: 0;
+}
+
+.mp-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 12px 24px;
+  background: linear-gradient(135deg, #ff8a75, #ff6f5e);
+  color: white;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s;
+  box-shadow: 0 4px 14px rgba(255, 111, 94, 0.3);
+}
+
+.mp-add-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(255, 111, 94, 0.4);
+}
+
+.mp-loading, .mp-empty {
+  text-align: center;
+  padding: 80px 20px;
+  color: #888;
+}
+
+.mp-empty-icon {
+  font-size: 64px;
+  color: #ffe0da;
+  margin-bottom: 20px;
+}
+
+.mp-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.mp-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+  border: 1px solid rgba(255, 111, 94, 0.1);
+  transition: transform 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.mp-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.08);
+}
+
+.mp-card-img-wrap {
+  position: relative;
+  height: 220px;
+  background: #faf9f6;
+}
+
+.mp-card-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.mp-card-img-ph {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #fff0ec, #ffe5e0);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  color: #ffb8b0;
+}
+
+.mp-status-badge {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.status-available { background: #d1f5e0; color: #1a7a3f; }
+.status-pending   { background: #fff3cd; color: #856404; }
+.status-adopted   { background: #d0e8ff; color: #1a4f7a; }
+.status-rejected  { background: #ffd5d5; color: #7a1a1a; }
+
+.mp-card-body {
+  padding: 24px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.mp-name {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1a1a2e;
+  margin: 0 0 4px 0;
+}
+
+.mp-type-breed {
+  font-size: 14px;
+  color: #888;
+  margin: 0 0 20px 0;
+  font-weight: 500;
+}
+
+.mp-view-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 12px;
+  background: #f8f8fb;
+  border: 1px solid #eee;
+  color: #555;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+  font-family: 'Outfit', sans-serif;
+  margin-top: auto;
+}
+
+.mp-view-btn:hover {
+  background: #fff0ec;
+  color: #ff6f5e;
+  border-color: #ff6f5e;
+}
+
+@media (max-width: 600px) {
+  .mp-header { flex-direction: column; text-align: center; }
+}

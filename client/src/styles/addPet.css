@@ -1,0 +1,205 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  background: #ffffff;
+}
+
+
+.addpet-container {
+  width: 100%;
+  max-width: 100vw;
+  padding: 32px 16px;
+}
+
+
+.addpet-form {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+
+.addpet-form h1 {
+  text-align: center;
+  font-size: 28px;
+  color: #7C3A1C;
+  margin-bottom: 32px;
+}
+
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  color: #ff6f5e;
+  margin-bottom: 16px;
+  font-weight: 600;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 16px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+
+.field label {
+  font-size: 14px;
+  font-weight: 600;
+  color: #444;
+}
+
+
+input,
+select,
+textarea {
+  width: 100%;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  background: #fff;
+}
+
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #ff6f5e;
+  box-shadow: 0 0 0 2px rgba(255, 111, 94, 0.15);
+}
+
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+
+.pill-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.pill {
+  padding: 6px 14px;
+  border-radius: 20px;
+  background: #f2f2f2;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  user-select: none;
+}
+
+.pill:hover {
+  background: #ffe1db;
+}
+
+.pill.active {
+  background: #ff6f5e;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(255, 111, 94, 0.25);
+}
+
+
+.toggle-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.toggle-group button {
+  padding: 6px 14px;
+  border-radius: 20px;
+  border: none;
+  background: #eee;
+  cursor: pointer;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.toggle-group button:hover {
+  background: #ffe1db;
+}
+
+.toggle-group button.active {
+  background: #ff6f5e;
+  color: #fff;
+  box-shadow: 0 4px 10px rgba(255, 111, 94, 0.25);
+}
+
+
+.preview {
+  margin-top: 10px;
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  background: #faf9f6;
+  border-radius: 10px;
+}
+
+
+button[type="submit"] {
+  width: 100%;
+  padding: 14px;
+  margin-top: 10px;
+  background: #ff6f5e;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.25s ease;
+}
+
+button[type="submit"]:hover {
+  background: #e65a4c;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 20px rgba(255, 111, 94, 0.3);
+}
+
+
+@media (min-width: 768px) {
+  .addpet-container {
+    padding: 40px 32px;
+  }
+
+  .addpet-form h1 {
+    font-size: 34px;
+    font-weight: 700;
+  }
+}
+
+@media (min-width: 1200px) {
+  .addpet-container {
+    padding: 50px 40px;
+  }
+}
